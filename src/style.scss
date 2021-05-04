@@ -1,0 +1,20 @@
+body, html {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to bottom, #ff8d8d 0%,#f19f53 40%,#e0d105 60%,#58e9e9 80%);
+    font-weight: 500;
+    font-size: 1.5rem;
+    height: 100%;
+    list-style-type: none;
+    color:darkslateblue;
+
+  }
+  .logo {
+    background-image: url('img/horizon.gif');
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .active {
+    color: pink;
+  }
