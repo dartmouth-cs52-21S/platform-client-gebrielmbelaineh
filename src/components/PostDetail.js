@@ -40,18 +40,14 @@ const PostDetail = ({ id }) => {
     <div>
       <form className="create-post">
         <input
+          className="title"
           name="title"
           value={postDetail.title}
           onChange={handleChange}
           placeholder={current.title}
         />
-        <input
-          name="tags"
-          value={postDetail.tags}
-          onChange={handleChange}
-          placeholder={current.tags}
-        />
         <textarea
+          className="content"
           name="content"
           value={postDetail.content}
           onChange={handleChange}
@@ -59,10 +55,18 @@ const PostDetail = ({ id }) => {
           rows="3"
         />
         <input
+          className="url"
           name="coverUrl"
           value={postDetail.coverUrl}
           onChange={handleChange}
           placeholder={current.coverUrl}
+        />
+        <input
+          className="tags"
+          name="tags"
+          value={postDetail.tags}
+          onChange={handleChange}
+          placeholder={current.tags}
         />
         <Link to="/">
           <button type="button" className="Donebutton" onClick={editHandler}>

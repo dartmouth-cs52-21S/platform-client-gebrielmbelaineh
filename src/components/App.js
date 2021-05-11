@@ -5,7 +5,6 @@ import {
 import Navbar from './Navbar';
 import Createpost from './CreatePost';
 import Posts from './Posts';
-import PostList from './PostList';
 import PostDetail from './PostDetail';
 
 // const FallBack = (props) => {
@@ -19,7 +18,6 @@ const App = (props) => {
       <Navbar />
       <Switch>
         <Route path="/" exact component={Posts} />
-        <Route path="/postlist" component={PostList} />
         <Route path="/createpost" component={Createpost} />
         <Route path="/post/:postId" component={PostDetail} />
       </Switch>

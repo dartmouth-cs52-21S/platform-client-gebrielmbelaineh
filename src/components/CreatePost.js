@@ -31,42 +31,39 @@ const Createpost = () => {
   return (
     <div>
       <form className="create-post">
-        <div>
-          <input
-            name="title"
-            placeholder="Title"
-            onChange={handleChange}
-            value={postComponent.title}
-          />
-        </div>
 
-        <div>
-          <input
-            name="tags"
-            placeholder="Tags"
-            onChange={handleChange}
-            value={postComponent.tags}
-          />
-        </div>
+        <input
+          className="title"
+          name="title"
+          placeholder="Title"
+          onChange={handleChange}
+          value={postComponent.title}
+        />
 
-        <div>
-          <input
-            name="coverUrl"
-            placeholder="Image URL"
-            onChange={handleChange}
-            value={postComponent.coverUrl}
-          />
-        </div>
+        <textarea
+          className="content"
+          name="content"
+          placeholder="Take a note..."
+          rows="3"
+          onChange={handleChange}
+          value={postComponent.content}
+        />
 
-        <div>
-          <textarea
-            name="content"
-            placeholder="Take a note..."
-            rows="3"
-            onChange={handleChange}
-            value={postComponent.content}
-          />
-        </div>
+        <input
+          className="url"
+          name="coverUrl"
+          placeholder="Image URL"
+          onChange={handleChange}
+          value={postComponent.coverUrl}
+        />
+
+        <input
+          className="tags"
+          name="tags"
+          placeholder="Tags"
+          onChange={handleChange}
+          value={postComponent.tags}
+        />
 
         <Link to="/"><button type="button" className="addbutton" onClick={addPost}> <AddIcon /></button></Link>
       </form>

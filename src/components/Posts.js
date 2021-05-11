@@ -15,7 +15,7 @@ const posts = () => {
   }, []);
 
   return (
-    <div>
+    <div className="posts">
       {all.map((post) => (
         <div key={post.id}>
           <Link to={`/post/${post.id}`}> <Post
