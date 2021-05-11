@@ -2,7 +2,7 @@
 
 *React+Redux Content Platform*
 
-[deployed url](http://url-if-deployed-here)
+[deployed url](https://youthful-dijkstra-cc6bfe.netlify.app/)
 
 ## What Worked Well
 I really enjoyed working with redux. Setting it up took some time, but it was definetly worth it.<br>
