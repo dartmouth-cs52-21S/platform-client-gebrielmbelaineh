@@ -2,19 +2,128 @@ body, html {
     font-family: "Roboto", sans-serif;
     background: linear-gradient(to bottom, #ff8d8d 0%,#f19f53 40%,#e0d105 60%,#58e9e9 80%);
     font-weight: 500;
-    font-size: 1.5rem;
     height: 100%;
     list-style-type: none;
     color:darkslateblue;
 
   }
-  .logo {
-    background-image: url('img/horizon.gif');
-    width: 100px;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
   .active {
     color: pink;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height: 10vh;
+    background-color:cornsilk;
+    background-repeat: no-repeat;
+
+  }
+  .nav-links{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+  .post {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 240px;
+    margin: 16px;
+    float: left;
+  }
+  .post h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+  }
+  .post input {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+    outline: none;
+  }
+  
+  .post p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  .post button {
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    color:midnightblue;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+  }
+  form.create-post {
+    position: relative;
+    width: 480px;
+    margin: 30px auto 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+  }
+  form.create-post input,
+  form.create-post textarea {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    outline: none;
+    font-size: 1.2em;
+    font-family: inherit;
+    resize: none;
+  }
+  .Deletebutton {
+    position: absolute;
+    right: 75px;
+    bottom: -18px;
+    background: midnightblue;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+  }
+  .Donebutton {
+    position: absolute;
+    right: 18px;
+    bottom: -18px;
+    background: midnightblue;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+  }
+  .addbutton {
+    position: absolute;
+    right: 18px;
+    bottom: -18px;
+    background: midnightblue;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+  }
+  img {
+    width: 100%;
   }
