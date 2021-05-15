@@ -17,14 +17,14 @@ const posts = () => {
   return (
     <div className="posts">
       {all.map((post) => (
-        <div key={post.id}>
-          <Link to={`/post/${post.id}`}> <Post
-            key={post.id}
+        <div key={post._id}>
+          <Link to={`/post/${post._id}`}> <Post
+            key={post._id}
             title={post.title}
             content={post.content}
             tags={post.tags}
             coverUrl={post.coverUrl}
-            id={post.id}
+            id={post._id}
           />
           </Link>
         </div>

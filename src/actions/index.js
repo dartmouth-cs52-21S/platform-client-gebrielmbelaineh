@@ -8,7 +8,7 @@ export const ActionTypes = {
   DELETE_POST: 'DELETE_POST',
 };
 
-const ROOT_URL = 'https://platform.cs52.me/api';
+const ROOT_URL = 'https://gbelaineh-blog.herokuapp.com/api';
 const API_KEY = '?key=g_belaineh';
 
 export function fetchPosts() {
@@ -36,7 +36,6 @@ export function fetchPost(id) {
 }
 
 export function deletePost(id) {
-  console.log('pressed');
   return (dispatch) => {
     axios.delete(`${ROOT_URL}/posts/${id}${API_KEY}`)
       .then(() => {

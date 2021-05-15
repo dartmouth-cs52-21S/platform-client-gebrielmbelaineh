@@ -26,12 +26,12 @@ const PostDetail = ({ id }) => {
   };
 
   const deleteHandler = () => {
-    dispatch(deletePost(current.id));
+    dispatch(deletePost(current._id));
     dispatch(fetchPosts());
   };
 
   const editHandler = () => {
-    dispatch(updatePost(current.id, postDetail));
+    dispatch(updatePost(current._id, postDetail));
     dispatch(fetchPosts());
   };
 
