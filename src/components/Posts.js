@@ -8,7 +8,7 @@ const posts = () => {
   const {
     all,
   } = useSelector((state) => state.posts);
-  const dispatch = useDispatch(fetchPosts());
+  const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchPosts());
